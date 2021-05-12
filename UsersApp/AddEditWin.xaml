@@ -1,0 +1,189 @@
+﻿<Window x:Class="UsersApp.AddEditWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        Title="AddEditWin" 
+        Height="700" 
+        Width="400" 
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="txtHeader"
+                   Grid.ColumnSpan="2"
+                   FontSize="17"
+                   HorizontalAlignment="Center"
+                   Margin="0 15 0 0"
+                   FontWeight="Bold"/>
+
+
+        <TextBlock Text="Фамилия"
+                   Grid.Row="1"
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                    />
+
+        <TextBlock Text="Имя"
+                   Grid.Row="2"
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                    />
+
+        <TextBlock Text="Отчество"
+                   Grid.Row="3"
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                    />
+
+        <TextBlock Text="Логин"
+                   Grid.Row="4"     
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                    />
+
+        <TextBlock Text="Пароль"
+                   Grid.Row="5"     
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                    />
+
+        <TextBlock Text="Должность"
+                   Grid.Row="6"
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                   />
+
+        <TextBlock Text="Пол"
+                   Grid.Row="7"
+                   FontSize="17"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 20 0"
+                   />
+
+        <TextBlock Text="Дата рождения"
+                   Grid.Row="8"
+                   Grid.ColumnSpan="2"
+                   FontSize="18"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="70 0 0 0"
+                   />
+
+        <TextBox x:Name="txtLastName" 
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 VerticalContentAlignment="Center"
+                 />
+
+        <TextBox x:Name="txtFirstName" 
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 VerticalContentAlignment="Center"
+                 />
+
+        <TextBox x:Name="txtMiddleName" 
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 VerticalContentAlignment="Center"
+                 />
+
+        <TextBox x:Name="txtLogin" 
+                 Grid.Row="4"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 VerticalContentAlignment="Center"/>
+
+        <TextBox x:Name="txtPassword" 
+                 Grid.Row="5"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 VerticalContentAlignment="Center"/>
+
+        <ComboBox x:Name="cmbUserRole" 
+                 Grid.Row="6"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 HorizontalContentAlignment="Center"/>
+
+        <ComboBox x:Name="cmbUserGender" 
+                 Grid.Row="7"
+                 Grid.Column="1"
+                 Margin="7 15 25 15"
+                 FontSize="15"
+                 HorizontalContentAlignment="Center"/>
+
+        <DatePicker x:Name="dpcUserBirthday"
+                    Grid.Row="8"
+                    Grid.Column="1"
+                    Margin="95 15 15 15"
+                    FontSize="15"
+                    HorizontalContentAlignment="Left"
+                    />
+
+        <Button x:Name="btnSave" 
+                Grid.Row="9"
+                Grid.Column="0"
+                Content="Cохранить"
+                FontSize="16"
+                Grid.ColumnSpan="2"
+                Width="200"
+                Margin="20 15 20 15 " Click="btnSave_Click"
+                />
+
+        <Button x:Name="btnClose" 
+                Grid.Row="10"
+                 Grid.Column="0"
+                Content="Отмена"
+                FontSize="16"
+                Grid.ColumnSpan="2"
+                Width="200"
+                Margin="20 15 20 15 " Click="btnClose_Click"
+                />
+
+
+    </Grid>
+</Window>
